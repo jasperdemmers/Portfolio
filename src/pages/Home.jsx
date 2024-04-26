@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Home = () => {
   // add a function to toggle the classList of dark
   const toggleDark = () => {
