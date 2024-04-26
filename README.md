@@ -1,8 +1,19 @@
-# React + Vite
+# Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the repository for my personal portfolio website. This site is designed to showcase my projects, skills, and experiences as a infrastructure student. Built with Vite, React, and Tailwind CSS, it represents a modern, responsive, and visually appealing way to present my professional persona to the world.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Modern Design**: Utilizes Tailwind CSS for a sleek, responsive design.
+- **React Framework**: Built with React for dynamic content management and state handling.
+- **Fast Loading**: Leveraging Vite for an incredibly fast development and build time.
+- **Responsive**: Fully responsive design, looks great on any device.
+- **Portfolio Projects**: Showcases my most significant projects with descriptions, technologies used, and links to live demos and source code.
+- **Contact Form**: Includes a contact form for easy communication.
+
+## Technologies Used
+
+- [Vite](https://vitejs.dev/)
+- [React](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Font Awesome](https://fontawesome.com/) for icons
