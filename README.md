@@ -1,6 +1,11 @@
 # Portfolio Website
 
-![Dev Deployment (staging)](https://github.com/jasperdemmers/portfolio/actions/workflows/dev-deployment.yaml/badge.svg?branch=development)
+<p align="center">
+  <img src="https://github.com/jasperdemmers/portfolio/actions/workflows/prod-deployment.yaml/badge.svg?branch=master" alt="Production Deployment">
+  <img src="https://github.com/jasperdemmers/portfolio/actions/workflows/dev-deployment.yaml/badge.svg?branch=development" alt="Development Deployment">
+</p>
+
+[jasperdemmers.com](https://jasperdemmers.com)
 
 [jasperdemmers.com](https://jasperdemmers.com)
 

@@ -6,4 +6,4 @@ services:
     image: portfolio
     container_name: portfolio
     ports:
-      - "8080:8080"
+      - "8082:8080"

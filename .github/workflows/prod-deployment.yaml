@@ -1,19 +1,19 @@
-name: Development Deployment
+name: Production Deployment
 on:
     push:
-        branches: [ "development" ]
-        
+        branches: [ "master" ]
+
 jobs:
     deployment:
+        environment: production
         runs-on: self-hosted
-        environment: development
         steps:
             - 
                 name: Checkout repository
                 uses: actions/checkout@v4
             -
                 name: Deploy using Docker Compose
-                run: docker compose -f docker-compose.dev.yaml up -d --build
+                run: docker compose -f docker-compose.prod.yaml up -d --build
             - 
                 name: Remove old images
                 run: docker image prune -f
