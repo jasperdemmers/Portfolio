@@ -17,3 +17,6 @@ jobs:
             -
                 name: Deploy using Docker Compose
                 run: docker compose up -d --build
+            - 
+                name: Remove old images
+                run: docker image prune -f
