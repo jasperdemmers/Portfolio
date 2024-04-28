@@ -6,8 +6,9 @@ on:
         branches: [ "devleopment" ]
 
 jobs:
-    deploy:
+    deployment:
         runs-on: self-hosted
+        environment: development
         steps:
             - 
                 name: Checkout repository

@@ -6,7 +6,8 @@ on:
         branches: [ "master" ]
 
 jobs:
-    deploy:
+    deployment:
+        environment: production
         runs-on: self-hosted
         steps:
             - 
