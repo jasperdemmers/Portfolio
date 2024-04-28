@@ -9,7 +9,7 @@ on:
 
 jobs:
     deploy:
-        runs-on: portfolio-staging
+        runs-on: staging
         steps:
             - 
                 name: Checkout repository
