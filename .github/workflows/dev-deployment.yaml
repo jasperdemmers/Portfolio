@@ -2,9 +2,7 @@ name: Development Deployment
 on:
     push:
         branches: [ "development" ]
-    pull_request:
-        branches: [ "devleopment" ]
-
+        
 jobs:
     deployment:
         runs-on: self-hosted
