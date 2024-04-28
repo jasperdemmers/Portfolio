@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  portfolio:
+    build:
+      context: .
+    image: portfolio
+    container_name: portfolio
+    ports:
+      - "8081:8080"
