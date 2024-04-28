@@ -1,0 +1,32 @@
+name: Deployment
+on:
+    workflow_run:
+        workflows: ["Docker Publish"]
+        types:
+            - completed
+        branches:
+            - master
+
+jobs:
+    deploy:
+        runs-on: self-hosted
+        steps:
+            - 
+                name: Checkout repository
+                uses: actions/checkout@v4
+            - 
+                name: Login to GitHub Container Registry
+                uses: docker/login-action
+                with:
+                    registry: ghcr.io
+                    username: ${{ github.actor }}
+                    password: ${{ secrets.GITHUB_TOKEN }}
+            - 
+                name: Pull docker image
+                run: docker pull ghcr.io/${{ github.repository }}:latest
+            -
+                name: Deploy
+                run: |
+                    docker stop portfolio || true
+                    docker rm portfolio || true
+                    docker run -d --name portfolio -p 8080:8080 ghcr.io/${{ github.repository }}:latest
