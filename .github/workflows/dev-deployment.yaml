@@ -1,0 +1,20 @@
+name: Dev Deployment (Staging)
+on:
+    push:
+        branches: [ "development" ]
+    pull_request:
+        branches: [ "devleopment" ]
+
+jobs:
+    deploy:
+        runs-on: staging
+        steps:
+            - 
+                name: Checkout repository
+                uses: actions/checkout@v4
+            -
+                name: Deploy using Docker Compose
+                run: docker compose up -d --build
+            - 
+                name: Remove old images
+                run: docker image prune -f
