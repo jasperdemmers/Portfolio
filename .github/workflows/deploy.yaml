@@ -1,15 +1,15 @@
-name: Deployment
+name: Deployment (Staging)
 on:
     push:
-        branches: [ "master" ]
+        branches: [ "master", "development" ]
         # Publish semver tags as releases.
         tags: [ 'v*.*.*' ]
     pull_request:
-        branches: [ "master" ]
+        branches: [ "master", "devleopment" ]
 
 jobs:
     deploy:
-        runs-on: self-hosted
+        runs-on: portfolio-staging
         steps:
             - 
                 name: Checkout repository
