@@ -1,9 +1,9 @@
 version: '3.8'
 services:
-  portfolio:
+  portfolio-prod:
     build:
       context: .
-    image: portfolio
-    container_name: portfolio
+    image: portfolio-prod
+    container_name: portfolio-prod
     ports:
       - "8081:8080"
