@@ -46,10 +46,10 @@ const Hero = () => {
                     I am not just living in the era of technology, I am actively shaping it.
                 </span>
                 <div className='mt-4 flex justify-start gap-4 pt-0 md:pt-8'>
-                    <a>
+                    <a href="https://url.jasperdemmers.com/1eIBE" target="_blank">
                         <FaLinkedin className="w-12 h-12" style={{ color: iconColor.linkedin }}/>
                     </a>
-                    <a>
+                    <a href="https://url.jasperdemmers.com/Wsifh" target="_blank">
                         <FaGithub className="w-12 h-12" style={{ color: iconColor.github }}/>
                     </a>
                 </div>
