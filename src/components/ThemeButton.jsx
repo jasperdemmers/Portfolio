@@ -29,9 +29,9 @@ const ThemeButton = () => {
         <div className="fixed bottom-0 right-0 p-8">
             <button onClick={toggleDark} className="bg-primary-light dark:bg-primary-dark rounded-2xl p-1 md:p-2 flex justify-center items-center">
                 {isDark ? 
-                    <CiDark className="w-8 h-8 lg:w-12 lg:h-12 text-text-dark"/> 
+                    <CiSun className="w-8 h-8 lg:w-12 lg:h-12 text-text-dark"/> 
                     : 
-                    <CiSun className="w-8 h-8 lg:w-12 lg:h-12 text-text-light"/>
+                    <CiDark className="w-8 h-8 lg:w-12 lg:h-12 text-text-light"/>
                 }
             </button> 
         </div>
