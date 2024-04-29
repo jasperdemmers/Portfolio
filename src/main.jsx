@@ -8,11 +8,13 @@ import Work from './pages/Work'
 import Contact from './pages/Contact'
 import NoPage from './pages/NoPage'
 import Navbar from './components/Navbar';
+import ThemeButton from './components/ThemeButton';
 
 export default function App() {
   return (
     <BrowserRouter>
       <Navbar />
+      <ThemeButton />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="whoami" element={<About />} />

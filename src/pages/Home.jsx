@@ -7,9 +7,8 @@ const Home = () => {
   }
 
   return (
-    <div className='text-text-light dark:text-text-dark'>
+    <div className='text-text-light dark:text-text-dark mx-auto'>
       <Hero />
-      <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full' onClick={toggleDark}>Toggle Dark Mode</button>
     </div>
   )
 }
