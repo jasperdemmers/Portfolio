@@ -28,7 +28,7 @@ const Hero = () => {
     }, []);
 
     return (
-        <div className="px-4 flex flex-col md:flex-row items-center gap-4 md:pt-12">
+        <div className="px-4 flex flex-col md:flex-row md:items-center gap-4 md:pt-12">
             {/* Left hand text */}
             <div className="flex-1">
                 <div className="tracking-wide font-body">
