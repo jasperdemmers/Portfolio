@@ -31,7 +31,7 @@ const ThemeButton = () => {
                 {isDark ? 
                     <CiSun className="w-8 h-8 lg:w-12 lg:h-12 text-text-dark"/> 
                     : 
-                    <CiDark className="w-8 h-8 lg:w-12 lg:h-12 text-text-light"/>
+                    <CiDark className="w-8 h-8 lg:w-12 lg:h-12 text-text-dark"/>
                 }
             </button> 
         </div>
