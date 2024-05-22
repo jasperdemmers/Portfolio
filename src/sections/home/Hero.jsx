@@ -55,7 +55,7 @@ const Hero = () => {
                 </div>
             </div>
             <div className="flex-1">
-                <img className="border-8 rounded-3xl border-accent-light dark:border-accent-dark" src="/portraits/straight-look.png"></img>
+                <img alt="Straight look" className="border-8 rounded-3xl border-accent-light dark:border-accent-dark" src="/portraits/straight-look.png"></img>
             </div>
         </div>
     )
