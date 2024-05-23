@@ -27,7 +27,7 @@ const Bin = () => {
                             </div>
                         </div>
                         <div className={"flex mt-4 md:mt-0"}>
-                            <button className={"text-text-dark md:text-2xl w-full px-6 p-2 rounded-full bg-primary-light dark:bg-primary-dark"}>
+                            <button className={"text-text-dark md:text-2xl w-full px-6 p-2 rounded-full bg-primary-light dark:bg-primary-dark hover:bg-primary-dark dark:hover:bg-primary-light"}>
                                 Portfolio Website
                             </button>
                         </div>
@@ -51,7 +51,7 @@ const Bin = () => {
                         </div>
                         <div className={"flex mt-4 md:mt-0"}>
                             <button
-                                className={"text-text-dark md:text-2xl w-full px-6 p-2 rounded-full bg-primary-light dark:bg-primary-dark"}>
+                                className={"text-text-dark md:text-2xl w-full px-6 p-2 rounded-full bg-primary-light dark:bg-primary-dark hover:bg-primary-dark dark:hover:bg-primary-light"}>
                                 Greenroom - Citric Labs
                             </button>
                         </div>
@@ -80,7 +80,7 @@ const Bin = () => {
                         </div>
                         <div className={"flex mt-4 md:mt-0"}>
                             <button
-                                className={"text-text-dark md:text-2xl w-full px-6 p-2 rounded-full bg-primary-light dark:bg-primary-dark"}>
+                                className={"text-text-dark md:text-2xl w-full px-6 p-2 rounded-full bg-primary-light dark:bg-primary-dark hover:bg-primary-dark dark:hover:bg-primary-light"}>
                                 SimplePark
                             </button>
                         </div>

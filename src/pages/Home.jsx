@@ -16,7 +16,7 @@ const Home = () => {
                     <h1 className={"text-3xl"}>
                         Get In Touch
                     </h1>
-                    <h4 className={"text-2xl"}>
+                    <h4 className={"text-2xl px-12"}>
                         I&apos;d love to hear from ya!
                     </h4>
                 </button>

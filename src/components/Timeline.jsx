@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 const Timeline = ({ logoSrc, title, span, description, className}) => {
     return (
-        <li className={`mb-6 lg:mb-0 w-full ${className}`}>
+        <li className={`mb-6 lg:mb-0 w-full font-display ${className}`}>
             <div className="flex items-center flex-col lg:flex-row">
                 <div
                     className="z-10 flex items-center justify-center w-12 h-12 rounded-full ring-secondary-light bg-secondary-light dark:ring-secondary-dark dark:bg-secondary-dark ring-8 shrink-0">

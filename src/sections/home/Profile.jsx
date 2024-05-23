@@ -3,7 +3,7 @@ import Timeline from "../../components/Timeline.jsx";
 const Profile = () => {
     return (
         <div>
-            <div className="text-center pt-24 pb-8">
+            <div className="text-center pt-24 pb-12">
                 <div className="font-body text-3xl">
                     .Profile
                 </div>
@@ -39,7 +39,7 @@ const Profile = () => {
                     </Timeline>
                 </ol>
             </div>
-            <div className={"flex mt-4 justify-center"}>
+            <div className={"flex pt-12 justify-center"}>
                 <button
                     className={"text-center py-2 px-6 font-body text-2xl bg-primary-light flex-shrink-0 rounded-full dark:bg-primary-dark text-text-dark hover:bg-primary-dark dark:hover:bg-primary-light"}>
                     View Detailed Profile
