@@ -1,14 +1,12 @@
+import SecHead from "../../components/SecHead.jsx";
+
 const Bin = () => {
     return (
         <div>
-            <div className={"text-center pt-24 pb-8"}>
-                <div className="font-body text-3xl">
-                    ./Bin
-                </div>
-                <div className="pt-4 font-body text-6xl">
-                    Portfolio
-                </div>
-            </div>
+            <SecHead
+                subHead={"./Bin"}
+                head={"Portfolio"}>
+            </SecHead>
             <div className={"grid grid-cols-2 lg:grid-cols-3 gap-2 md:gap-12 font-body m-4 md:m-0"}>
                 <div className={"rounded-3xl bg-secondary-light dark:bg-background-dark"}>
                     <div className={"p-4 flex flex-col"}>
@@ -57,7 +55,7 @@ const Bin = () => {
                         </div>
                     </div>
                 </div>
-                <div className={"rounded-3xl bg-secondary-light dark:bg-background-dark col-span-2 lg:col-span-1"}>
+                <div className={"rounded-3xl bg-secondary-light dark:bg-background-dark col-span-1"}>
                     <div className={"p-4 flex flex-col"}>
                         <img alt="Portfolio Webiste" className={"rounded-3xl h-40 md:h-60 object-cover"}
                              src={"/portfolio/simplepark.png"}></img>

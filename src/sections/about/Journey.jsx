@@ -1,16 +1,13 @@
 import JourneyTimeline from "../../components/JourneyTimeline.jsx";
+import SecHead from "../../components/SecHead.jsx";
 
 const Journey = () => {
     return (
         <div>
-            <div className="text-center pt-24 pb-12">
-                <div className="font-body text-3xl">
-                    ~/Location
-                </div>
-                <div className="pt-4 font-body text-6xl">
-                    My Journey
-                </div>
-            </div>
+            <SecHead
+                subHead={"~/Location"}
+                head={"My Journey"}>
+            </SecHead>
             <div className={"antialiased"}>
                 <JourneyTimeline />
             </div>

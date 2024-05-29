@@ -1,16 +1,13 @@
 import Timeline from "../../components/Timeline.jsx";
+import SecHead from "../../components/SecHead.jsx";
 
 const Profile = () => {
     return (
         <div>
-            <div className="text-center pt-24 pb-12">
-                <div className="font-body text-3xl">
-                    .Profile
-                </div>
-                <div className="pt-4 font-body text-6xl">
-                    Experiences
-                </div>
-            </div>
+            <SecHead
+                subHead={".Profile"}
+                head={"Experiences"}>
+            </SecHead>
             <div className={"px-8"}>
                 <ol className={"lg:flex items-stretch"}>
                     <Timeline

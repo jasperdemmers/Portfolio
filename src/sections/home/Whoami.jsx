@@ -1,16 +1,13 @@
 import Quote from "../../components/Quote.jsx";
+import SecHead from "../../components/SecHead.jsx";
 
 const Whoami = () => {
     return (
         <div>
-            <div className="text-center pt-24 pb-8">
-                <div className="font-body text-3xl">
-                    $Whoami
-                </div>
-                <div className="pt-4 font-body text-6xl">
-                    Who Am I?
-                </div>
-            </div>
+            <SecHead
+                subHead={"$Whoami"}
+                head={"Who Am I?"}>
+            </SecHead>
             <div className="px-4 flex flex-col md:flex-row md:items-center gap-4 md:pt-12">
                 <div className="flex-1 basis-1/3 hidden md:block">
                     <img alt="Side look" className="border-8 rounded-3xl border-accent-light dark:border-accent-dark" src={"/portraits/side-look.png"}></img>
