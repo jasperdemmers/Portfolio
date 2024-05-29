@@ -1,5 +1,6 @@
 import Quote from "../../components/Quote.jsx";
 import SecHead from "../../components/SecHead.jsx";
+import {NavLink} from "react-router-dom";
 
 const Whoami = () => {
     return (
@@ -29,9 +30,11 @@ const Whoami = () => {
                         />
                     </div>
                     <div className={"flex mt-4 justify-center md:justify-start"}>
-                        <button className={"text-center py-2 px-6 font-body text-2xl bg-primary-light flex-shrink-0 rounded-full dark:bg-primary-dark text-text-dark hover:bg-primary-dark dark:hover:bg-primary-light"}>
-                            Get to know me
-                        </button>
+                        <NavLink to={'/whoami'}>
+                            <button className={"text-center py-2 px-6 font-body text-2xl bg-primary-light flex-shrink-0 rounded-full dark:bg-primary-dark text-text-dark hover:bg-primary-dark dark:hover:bg-primary-light"}>
+                                Get to know me
+                            </button>
+                        </NavLink>
                     </div>
                 </div>
             </div>

@@ -9,11 +9,12 @@ import Contact from './pages/Contact'
 import NoPage from './pages/NoPage'
 import Navbar from './components/Navbar';
 import ThemeButton from './components/ThemeButton';
+import ScrollToTop from "./components/ScrollToTop.js";
 
 export default function App() {
-  return (
-    <div className={""}>
+    return (
         <BrowserRouter>
+            <ScrollToTop />
             <div className={"constrained-container"}>
                 <Navbar />
                 <ThemeButton />
@@ -27,8 +28,7 @@ export default function App() {
                 <Route path="*" element={<NoPage />} />
             </Routes>
         </BrowserRouter>
-    </div>
-  )
+    )
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
