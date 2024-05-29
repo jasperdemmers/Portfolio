@@ -1,3 +1,5 @@
+import Quote from "../../components/Quote.jsx";
+
 const Whoami = () => {
     return (
         <div>
@@ -22,14 +24,12 @@ const Whoami = () => {
                         </p>
                     </div>
                     <div className={"py-6"}>
-                        <p className={"font-quotes text-3xl italic font-extralight tracking-wider"}>
-                            “Dreams without goals, are just <span
-                                className={"font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary-light dark:from-primary-dark to-accent-light dark:to-accent-dark"}
-                            >dreams</span> and they ultimately fuel disappointment.”
-                        </p>
-                        <p className={"pt-3 font-quotes text-2xl italic font-extralight tracking-wide"}>
-                            Denzel Washington
-                        </p>
+                        <Quote
+                            p1={`"Dreams without goals, are just `}
+                            p2={"dreams"}
+                            p3={` and they ultimately fuel disappointment."`}
+                            auth={"Denzel Washington"}
+                        />
                     </div>
                     <div className={"flex mt-4 justify-center md:justify-start"}>
                         <button className={"text-center py-2 px-6 font-body text-2xl bg-primary-light flex-shrink-0 rounded-full dark:bg-primary-dark text-text-dark hover:bg-primary-dark dark:hover:bg-primary-light"}>
