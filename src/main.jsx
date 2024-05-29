@@ -12,18 +12,22 @@ import ThemeButton from './components/ThemeButton';
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <Navbar />
-      <ThemeButton />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="whoami" element={<About />} />
-        <Route path="profile" element={<Profile />} />
-        <Route path="bin" element={<Work />} />
-        <Route path="ping" element={<Contact />} />
-        <Route path="*" element={<NoPage />} />
-      </Routes>
-    </BrowserRouter>
+    <div className={""}>
+        <BrowserRouter>
+            <div className={"constrained-container"}>
+                <Navbar />
+                <ThemeButton />
+            </div>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="whoami" element={<About />} />
+                <Route path="profile" element={<Profile />} />
+                <Route path="bin" element={<Work />} />
+                <Route path="ping" element={<Contact />} />
+                <Route path="*" element={<NoPage />} />
+            </Routes>
+        </BrowserRouter>
+    </div>
   )
 }
 

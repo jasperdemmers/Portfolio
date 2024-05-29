@@ -18,6 +18,7 @@ const ThemeButton = () => {
             });
         });
 
+
         observer.observe(document.documentElement, {
             attributes: true
         });

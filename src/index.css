@@ -19,7 +19,7 @@ body {
 
   color-scheme: light dark;
 
-  max-width: 1280px;
+  /*max-width: 1280px;*/
   margin: 0 auto;
 
   font-synthesis: none;
@@ -48,4 +48,9 @@ body {
 
 .active .nav-link::after {
   transform: scaleX(1);
+}
+
+.constrained-container {
+  max-width: 1280px;
+  margin: 0 auto;
 }
