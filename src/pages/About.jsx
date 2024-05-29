@@ -1,6 +1,7 @@
 import Hero from '../sections/about/Hero.jsx'
 import Whoami from '../sections/about/Whoami.jsx'
 import Homelab from "../sections/about/Homelab.jsx";
+import Journey from "../sections/about/Journey.jsx";
 
 const About = () => {
   return (
@@ -9,6 +10,7 @@ const About = () => {
           <Hero />
           <Whoami />
           <Homelab />
+          <Journey />
         </div>
       </div>
   )

@@ -4,6 +4,29 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .timeline-img {
+    @apply h-24 w-24 object-cover rounded-full shadow-md border-4 border-secondary-dark dark:border-secondary-light xs:absolute md:mx-auto md:left-0 md:right-0;
+    @apply lg:h-48 lg:w-48;
+  }
+  .timeline-container {
+    @apply relative pt-2 xs:pl-28 xs:pt-0 md:w-1/2 md:ml-auto md:pl-16;
+    @apply lg:pt-4 lg:pl-32;
+  }
+  .timeline-container-left {
+    @apply md:ml-0 md:mr-auto md:pl-0 md:pr-16;
+    @apply lg:pr-32;
+  }
+  .timeline-pointer {
+    @apply absolute inset-0 left-10 h-4 w-4 transform rotate-45 bg-secondary-dark dark:bg-secondary-light xs:top-11 xs:left-28 md:left-14;
+    @apply lg:left-28 lg:h-8 lg:w-8 lg:top-24;
+  }
+  .timeline-pointer-left {
+    @apply md:left-auto md:right-14;
+    @apply lg:right-28;
+  }
+}
+
 .dark body {
   background-color: theme(colors.background.dark);
 }
@@ -53,4 +76,14 @@ body {
 .constrained-container {
   max-width: 1280px;
   margin: 0 auto;
+}
+
+.underline-accent {
+  text-decoration: underline;
+  text-decoration-color: theme(colors.accent.light)
+}
+
+.underline-accent-dark {
+  text-decoration: underline;
+  text-decoration-color: theme(colors.accent.dark)
 }
