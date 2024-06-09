@@ -28,7 +28,7 @@ const Experience = () => {
                     } ${index === experiences.length - 1 ? 'pb-1' : ''}`}
                     onClick={() => toggleExpand(index)}
                 >
-                    <div className="flex h-full w-full items-center justify-center bg-background-light dark:bg-background-dark p-4 shadow-inner shadow-md">
+                    <div className="flex h-full w-full items-center justify-center bg-background-light dark:bg-background-dark p-4 shadow-inner">
                         <div className="w-full">
                             <div className="font-bold">{experience.title}</div>
                             <div
@@ -43,7 +43,7 @@ const Experience = () => {
                         </div>
                     </div>
                     <div className={`absolute ${expandedIndex === index ? 'bottom-4 right-4' : 'top-5 right-4'} transition-all duration-300`}>
-                        <span className={`text-4xl transform transition-transform duration-300`}>
+                        <span className={`text-4xl transform transition-transform duration-300 hidden sm:inline`}>
                             {expandedIndex === index ? <GoTriangleUp /> : <GoTriangleDown />}
                         </span>
                     </div>
