@@ -1,7 +1,13 @@
+import Hero from "../sections/profile/Hero.jsx";
+import Experience from "../sections/profile/Experience.jsx";
+
 const Profile = () => {
   return (
-    <div>
-      <h1>Profile</h1>
+    <div className={"text-text-light dark:text-text-dark mx-auto"}>
+        <div className={"constrained-container"}>
+            <Hero/>
+            <Experience/>
+        </div>
     </div>
   )
 }

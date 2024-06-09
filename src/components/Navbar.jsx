@@ -32,15 +32,15 @@ const Navbar = () => {
         <nav className='bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark p-4 relative'>
             <div className='flex justify-between'>
                 <NavLogo />
-                <button className="inline-flex items-center p-2 ml-3 text-sm md:hidden" onClick={() => setIsOpen(!isOpen)}>
+                <button className="inline-flex items-center p-2 ml-3 text-sm lg:hidden" onClick={() => setIsOpen(!isOpen)}>
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
                 </button>
-                <div id="navbarMenu" className={`absolute top-full w-full text-center bg-background-light dark:bg-background-dark z-10 transform origin-top duration-500 ${isOpen ? 'scale-y-100' : 'scale-y-0'} md:scale-y-100 md:relative md:flex md:justify-end md:items-center md:w-auto md:bg-transparent transition-transform duration-300 ease-in-out`}>
-                    <ul className='flex flex-col mt-4 md:flex-row md:space-x-8 lg:space-x-16 md:mt-0 text-xl font-display'>
+                <div id="navbarMenu" className={`absolute top-full w-full text-center bg-background-light dark:bg-background-dark z-10 transform origin-top duration-500 ${isOpen ? 'scale-y-100' : 'scale-y-0'} lg:scale-y-100 lg:relative lg:flex lg:justify-end lg:items-center lg:w-auto lg:bg-transparent transition-transform duration-300 ease-in-out`}>
+                    <ul className='flex flex-col mt-4 lg:flex-row lg:space-x-8 lg:space-x-16 lg:mt-0 text-xl font-display'>
                         <li>
                             <NavLink 
                                 className={({ isActive }) =>
-                                    `inline-block py-2 pr-4 pl-3 md:p-0 hover:text-primary-light dark:hover:text-primary-dark ${isActive ? 'active' : ''}`
+                                    `inline-block py-2 pr-4 pl-3 lg:p-0 hover:text-primary-light dark:hover:text-primary-dark ${isActive ? 'active' : ''}`
                                 }
                                 to="/" 
                                 onClick={closeMenu}
@@ -53,7 +53,7 @@ const Navbar = () => {
                         <li>
                             <NavLink 
                                 className={({ isActive }) =>
-                                    `inline-block py-2 pr-4 pl-3 md:p-0 hover:text-primary-light dark:hover:text-primary-dark ${isActive ? 'active' : ''}`
+                                    `inline-block py-2 pr-4 pl-3 lg:p-0 hover:text-primary-light dark:hover:text-primary-dark ${isActive ? 'active' : ''}`
                                 }
                                 to="/whoami" 
                                 onClick={closeMenu}
@@ -66,7 +66,7 @@ const Navbar = () => {
                         <li>
                             <NavLink 
                                 className={({ isActive }) =>
-                                    `inline-block py-2 pr-4 pl-3 md:p-0 hover:text-primary-light dark:hover:text-primary-dark ${isActive ? 'active' : ''}`
+                                    `inline-block py-2 pr-4 pl-3 lg:p-0 hover:text-primary-light dark:hover:text-primary-dark ${isActive ? 'active' : ''}`
                                 }
                                 to="/profile" 
                                 onClick={closeMenu}
@@ -79,7 +79,7 @@ const Navbar = () => {
                         <li>
                             <NavLink 
                                 className={({ isActive }) =>
-                                    `inline-block py-2 pr-4 pl-3 md:p-0 hover:text-primary-light dark:hover:text-primary-dark ${isActive ? 'active' : ''}`
+                                    `inline-block py-2 pr-4 pl-3 lg:p-0 hover:text-primary-light dark:hover:text-primary-dark ${isActive ? 'active' : ''}`
                                 }
                                 to="/bin" onClick={closeMenu}
                             >
@@ -91,7 +91,7 @@ const Navbar = () => {
                         <li>
                             <NavLink 
                                 className={({ isActive }) =>
-                                    `inline-block py-2 pr-4 pl-3 md:p-0 hover:text-primary-light dark:hover:text-primary-dark ${isActive ? 'active' : ''}`
+                                    `inline-block py-2 pr-4 pl-3 lg:p-0 hover:text-primary-light dark:hover:text-primary-dark ${isActive ? 'active' : ''}`
                                 }
                                 to="/ping" 
                                 onClick={closeMenu}

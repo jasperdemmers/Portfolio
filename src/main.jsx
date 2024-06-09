@@ -10,6 +10,7 @@ import NoPage from './pages/NoPage'
 import Navbar from './components/Navbar';
 import ThemeButton from './components/ThemeButton';
 import ScrollToTop from "./components/ScrollToTop.js";
+import Profile from "./pages/Profile.jsx";
 
 const Overlay = () => {
     return (
@@ -37,9 +38,8 @@ export default function App() {
                     </>} />
                 <Route path="profile" element={
                     <>
-                        <NoPage/>
-                        {/*<Overlay />*/}
-                        {/*<Profile />*/}
+                        <Overlay />
+                        <Profile />
                     </>} />
                 <Route path="bin" element={
                     <>
